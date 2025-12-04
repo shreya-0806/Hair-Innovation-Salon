@@ -1,65 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hair Innovation — Contact</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="logo">HI</span><span class="brand-name">Hair Innovation</span></a>
-      <nav class="main-nav" aria-label="Main Navigation">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden>HI</span>
+        <span class="brand-name">Hair Innovation</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
         <ul id="nav-list" class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
+        <a class="btn small cta-desktop" href="contact.html">Book</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>Contact & Bookings</h1>
-    <p class="muted">Questions or ready to book? Send a message or call us — we reply within 48 hours.</p>
+    <section class="contact-page">
+      <h1>Contact & Bookings</h1>
+      <p class="muted">Questions or ready to book? Send a message or call us — we reply within 48 hours.</p>
 
-    <div class="grid contact-grid">
-      <form id="contactForm" class="contact-form" method="POST" action="#" novalidate>
-        <!-- To make this send emails, replace action with Formspree URL or use Netlify Forms -->
-        <label for="name">Full name</label>
-        <input id="name" name="name" type="text" required>
+      <div class="grid contact-grid">
+        <form id="contactForm" class="contact-form" method="POST" action="#" novalidate>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-        <label for="service">Service</label>
-        <select id="service" name="service">
-          <option value="">Choose a service</option>
-          <option>Haircut & Styling</option>
-          <option>Coloring</option>
-          <option>Keratin</option>
-          <option>Bridal Styling</option>
-        </select>
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option value="">Choose a service</option>
+            <option>Haircut & Styling</option>
+            <option>Coloring</option>
+            <option>Keratin</option>
+            <option>Bridal Styling</option>
+          </select>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Preferred date, time, and any notes"></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Preferred date, time, and any notes"></textarea>
 
-        <button type="submit" class="btn primary">Send request</button>
-        <p id="formMessage" class="muted"></p>
-      </form>
+          <div class="form-row">
+            <button type="submit" class="btn gradient">Send request</button>
+            <div id="formMessage" class="muted"></div>
+          </div>
+        </form>
 
-      <aside class="contact-info">
-        <h3>Visit or call</h3>
-        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-        <p><strong>Email:</strong> <a href="mailto:info@hairinnovation.com">info@hairinnovation.com</a></p>
-        <p><strong>Address:</strong> 123 Salon Street, City, Country</p>
+        <aside class="contact-info">
+          <h3>Visit or call</h3>
+          <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+          <p><strong>Email:</strong> <a href="mailto:info@hairinnovation.com">info@hairinnovation.com</a></p>
+          <p><strong>Address:</strong> 123 Salon Street, City, Country</p>
 
-        <h4>Follow</h4>
-        <p class="muted">Instagram • Facebook • Pinterest</p>
-      </aside>
-    </div>
+          <h4>Follow</h4>
+          <p class="muted">Instagram • Facebook • Pinterest</p>
+        </aside>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
