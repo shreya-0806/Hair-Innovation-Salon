@@ -1,55 +1,62 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hair Innovation — Services</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="logo">HI</span><span class="brand-name">Hair Innovation</span></a>
-      <nav class="main-nav" aria-label="Main Navigation">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden>HI</span>
+        <span class="brand-name">Hair Innovation</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
         <ul id="nav-list" class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
+        <a class="btn small cta-desktop" href="contact.html">Book</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>Services & Pricing</h1>
-    <p class="muted">All prices are indicative — final price depends on hair length and product choice.</p>
+    <section class="services-page">
+      <h1>Services & Pricing</h1>
+      <p class="muted">Indicative prices. Final cost depends on hair length and product choices.</p>
 
-    <div class="grid service-list">
-      <div class="service-card">
-        <h3>Haircut & Styling</h3>
-        <p class="muted">From ₹599</p>
-        <p>Consultation, precision cut, and styling.</p>
-      </div>
+      <div class="grid service-list">
+        <div class="service-card">
+          <h3>Haircut & Styling</h3>
+          <div class="price">From ₹599</div>
+          <p>Consultation, precision cut, and blowdry styling.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Coloring & Highlights</h3>
-        <p class="muted">From ₹1,799</p>
-        <p>Balayage, highlights, and root touch-ups.</p>
-      </div>
+        <div class="service-card">
+          <h3>Coloring & Highlights</h3>
+          <div class="price">From ₹1,799</div>
+          <p>Balayage, highlights, full-color & toning services.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Keratin Treatment</h3>
-        <p class="muted">From ₹3,499</p>
-        <p>Professional smoothing treatments for frizz control.</p>
-      </div>
+        <div class="service-card">
+          <h3>Keratin Treatment</h3>
+          <div class="price">From ₹3,499</div>
+          <p>Professional smoothing treatments for frizz control and shine.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Extensions</h3>
-        <p class="muted">From ₹2,999</p>
-        <p>High-quality extension fitting and maintenance.</p>
+        <div class="service-card">
+          <h3>Extensions</h3>
+          <div class="price">From ₹2,999</div>
+          <p>Premium extensions with professional fitting and care advice.</p>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -57,6 +64,7 @@
       <div>© <span id="yr2"></span> Hair Innovation</div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
