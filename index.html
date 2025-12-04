@@ -1,48 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hair Innovation — Home</title>
-  <meta name="description" content="Hair Innovation — modern salon. Responsive, accessible, and deploy-ready demo.">
+  <meta name="description" content="Hair Innovation — modern salon. Responsive, accessible, and deploy-ready demo." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <span class="logo">HI</span>
+        <span class="logo" aria-hidden>HI</span>
         <span class="brand-name">Hair Innovation</span>
       </a>
-      <nav class="main-nav" aria-label="Main Navigation">
+
+      <nav class="main-nav" aria-label="Primary">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
         <ul id="nav-list" class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
+        <a class="btn small cta-desktop" href="contact.html">Book</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <h1>Beautiful hair. Better you.</h1>
+          <h1><span class="serif">Beautiful</span> hair. Better you.</h1>
           <p class="lead">Personalised styling, premium care, and friendly professionals — curated for every day and special moments.</p>
           <div class="hero-cta">
-            <a class="btn primary" href="contact.html">Book Now</a>
+            <a class="btn gradient" href="contact.html">Book Now</a>
             <a class="btn ghost" href="services.html">View Services</a>
           </div>
+
+          <ul class="features">
+            <li>Certified stylists</li>
+            <li>Premium products</li>
+            <li>Hygienic studio</li>
+          </ul>
         </div>
-        <div class="hero-media" aria-hidden="true">
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Salon styling"/>
-            <div class="card-badge">Welcome — 20% off first visit</div>
-          </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Salon styling" loading="lazy">
+          <div class="badge">Welcome — 20% off</div>
         </div>
       </div>
     </section>
@@ -51,32 +59,36 @@
       <h2>Popular Services</h2>
       <div class="grid services-grid">
         <article class="service">
+          <div class="icon">✂️</div>
           <h3>Cut & Style</h3>
           <p>Precision cuts, blowouts, and styling for every hair texture.</p>
         </article>
         <article class="service">
+          <div class="icon">🎨</div>
           <h3>Color & Highlights</h3>
           <p>Balayage, highlights, root touch-ups with gentle colour systems.</p>
         </article>
         <article class="service">
+          <div class="icon">✨</div>
           <h3>Smoothing & Keratin</h3>
-          <p>Frizz reduction and long-lasting smooth results.</p>
+          <p>Frizz control and long-lasting smoothness.</p>
         </article>
         <article class="service">
+          <div class="icon">💍</div>
           <h3>Bridal Styling</h3>
-          <p>On-site styling and trials for your big day.</p>
+          <p>On-site styling and trial sessions for weddings and events.</p>
         </article>
       </div>
     </section>
 
     <section class="gallery container">
       <h2>Our Work</h2>
-      <p class="muted">A small showcase — include your own photos for stronger impact.</p>
+      <p class="muted">Real photos boost trust — replace with your own images.</p>
       <div class="grid photo-grid">
-        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt="style 1">
-        <img src="https://images.unsplash.com/photo-1507120878965-6ec1f4a3d7c0?q=80&w=800&auto=format&fit=crop" alt="style 2">
-        <img src="https://images.unsplash.com/photo-1520975665181-3b1a2f9b8f8a?q=80&w=800&auto=format&fit=crop" alt="style 3">
-        <img src="https://images.unsplash.com/photo-1508027244030-2d6d6f9b0b2f?q=80&w=800&auto=format&fit=crop" alt="style 4">
+        <img tabindex="0" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt="Style 1">
+        <img tabindex="0" src="https://images.unsplash.com/photo-1507120878965-6ec1f4a3d7c0?q=80&w=800&auto=format&fit=crop" alt="Style 2">
+        <img tabindex="0" src="https://images.unsplash.com/photo-1520975665181-3b1a2f9b8f8a?q=80&w=800&auto=format&fit=crop" alt="Style 3">
+        <img tabindex="0" src="https://images.unsplash.com/photo-1508027244030-2d6d6f9b0b2f?q=80&w=800&auto=format&fit=crop" alt="Style 4">
       </div>
     </section>
 
@@ -84,11 +96,11 @@
       <h2>What clients say</h2>
       <div class="testimonial-list">
         <blockquote>
-          <p>Lovely salon — my hair has never felt better. The stylist listened to what I wanted and delivered!</p>
+          <p>Lovely salon — my hair has never felt better. The stylist listened and delivered!</p>
           <cite>— Priya R.</cite>
         </blockquote>
         <blockquote>
-          <p>Professional and hygienic. I booked for bridal styling and they were amazing on the day.</p>
+          <p>Professional and hygienic. Bridal team made the day perfect.</p>
           <cite>— Anjali S.</cite>
         </blockquote>
       </div>
@@ -97,16 +109,27 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
+      <div class="brand-block">
         <strong>Hair Innovation</strong>
         <div class="muted">123 Salon Street • City • Country</div>
       </div>
+
       <div class="footer-actions">
-        <a href="contact.html" class="btn ghost">Contact</a>
+        <nav class="foot-nav">
+          <a href="index.html">Home</a> ·
+          <a href="services.html">Services</a> ·
+          <a href="contact.html">Contact</a>
+        </nav>
         <div class="muted">© <span id="yr"></span> Hair Innovation</div>
       </div>
     </div>
   </footer>
+
+  <!-- image modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img id="lightbox-img" alt="">
+  </div>
 
   <script src="script.js"></script>
 </body>
