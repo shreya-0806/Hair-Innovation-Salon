@@ -1,42 +1,62 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hair Innovation — Services</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hair Innovation — Services</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<div class="brand">Hair Innovation</div>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="logo">HI</span><span class="brand-name">Hair Innovation</span></a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h1>Services & Pricing</h1>
+    <p class="muted">All prices are indicative — final price depends on hair length and product choice.</p>
 
-<main class="container">
-<h1>Our Services</h1>
-<ul class="services-list">
-<li>Hair Wash</li>
-<li>Keratin Treatments</li>
-<li>Haircuts</li>
-<li>Hair Coloring</li>
-<li>Extensions</li>
-<li>Wedding Styling</li>
-</ul>
-</main>
+    <div class="grid service-list">
+      <div class="service-card">
+        <h3>Haircut & Styling</h3>
+        <p class="muted">From ₹599</p>
+        <p>Consultation, precision cut, and styling.</p>
+      </div>
 
+      <div class="service-card">
+        <h3>Coloring & Highlights</h3>
+        <p class="muted">From ₹1,799</p>
+        <p>Balayage, highlights, and root touch-ups.</p>
+      </div>
 
-<footer>
-<p>© <span id="year-2"></span> Hair Innovation</p>
-</footer>
+      <div class="service-card">
+        <h3>Keratin Treatment</h3>
+        <p class="muted">From ₹3,499</p>
+        <p>Professional smoothing treatments for frizz control.</p>
+      </div>
 
+      <div class="service-card">
+        <h3>Extensions</h3>
+        <p class="muted">From ₹2,999</p>
+        <p>High-quality extension fitting and maintenance.</p>
+      </div>
+    </div>
+  </main>
 
-<script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="yr2"></span> Hair Innovation</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
